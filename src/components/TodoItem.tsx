@@ -43,6 +43,12 @@ function TodoItem({
         </>
       ) : (
         <>
+          <input
+            className="mr-2"
+            type="checkbox"
+            checked={completed}
+            onChange={onToggle}
+          />
           <span
             onClick={onToggle}
             className={`flex-1 cursor-pointer ${
