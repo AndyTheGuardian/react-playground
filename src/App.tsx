@@ -110,20 +110,20 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-md">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-950 flex items-center justify-center text-black dark:text-gray-50">
+      <div className="bg-white dark:bg-gray-900 shadow-xl rounded-2xl p-6 w-full max-w-md">
         <h1 className="text-3xl font-bold text-center mb-6">Todo App</h1>
         {/* Input */}
         <div className="flex gap-2 mb-4">
           <input
-            className="flex-1 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex-1 border border-gray-300 dark:border-gray-700 dark:bg-gray-700 rounded p-2 focus:outline-none focus:ring focus:ring-blue-400"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Add a todo..."
           />
 
           <button
-            className="bg-blue-500 hover: bg-blue-600 text-white px-4 rounded-lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded"
             onClick={addTodo}
           >
             Add Todo

@@ -26,11 +26,11 @@ function TodoItem({
   }
 
   return (
-    <li className="flex items-center justify-between py-2 border-b">
+    <li className="flex items-center justify-between py-2 border-b border-gray-300 dark:border-gray-700">
       {isEditing ? (
         <>
           <input
-            className="flex-1 border rounded p-1 mr-2"
+            className="flex-1 border rounded p-1 mr-2 dark:bg-gray-700 border-gray-300 dark:border-gray-700"
             value={editText}
             onChange={(e) => setEditText(e.target.value)}
           />
